@@ -191,20 +191,17 @@
 
         }
         .navMenu {
-            width: 1025px;
-            margin: 15px auto; /* Centraliza horizontalmente */
+            width: 100%; /* Menu ocupa toda a largura da tela */
+            padding: 10px; /* Ajusta o espaçamento */
             box-sizing: border-box;
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+            text-align: center; /* Centraliza os links horizontalmente */
         }
     
         .navMenu a {
-            color: #000000; /* Cor do texto */
-            padding: 10px 15px; /* Espaçamento em volta do link */
-            display: inline-block; /* Permite o padding */
-            font-size: 25px; /* Aumenta o tamanho da fonte */
+            display: inline-block; /* Mantém os links na horizontal */
+            padding: 10px 5px; /* Ajusta o espaçamento dos links */
+            font-size: 16px; /* Ajusta o tamanho da fonte */
+            text-align: center; /* Centraliza o texto dos links */
         }
     }
 
@@ -290,21 +287,15 @@
         }
 
         .navMenu {
-            width: 1025px;
-            margin: 15px auto; /* Centraliza horizontalmente */
-            box-sizing: border-box;
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+            width: 100%; /* Menu ocupa toda a largura da tela */
+            padding: 10px; /* Ajusta o espaçamento */
+            text-align: center; /* Centraliza os links */
         }
-    
+        
         .navMenu a {
-            color: #000000; /* Cor do texto */
-            padding: 10px 15px; /* Espaçamento em volta do link */
-            display: inline-block; /* Permite o padding */
-            font-size: 25px; /* Aumenta o tamanho da fonte */
-        }     
+            font-size: 20px; /* Ajusta o tamanho da fonte */
+            padding: 10px; /* Ajusta o espaçamento dos links */
+        }          
         
         .noticia {
             margin: 10px; /* Ajusta as margens */
