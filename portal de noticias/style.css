@@ -1,0 +1,251 @@
+
+    .imgNoticia {
+        border-radius: 8px; /* Bordas arredondadas na imagem */
+        width: 40%; /* Largura da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        background-size: cover;
+        
+    }
+
+    .imgNoticia img {
+        width: 100%;
+    }
+        
+        
+    .textoNoticia {
+        font-family: 'arial', sans-serif;
+        font-size: 20px;
+        width: 60%; /* Largura da caixa */
+        height: 350px;
+        background-color: tomato; /* Cor de fundo */
+        border: 1px solid #000000; /* Borda */
+        border-radius: 8px; /* Bordas arredondadas */
+        padding: 30px; /* Espaçamento interno */
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: black;
+        word-spacing: 1px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .noticiaDestaque {
+        gap: 20px;
+        display: flex; /* Ativa o flexbox */
+        justify-content: space-between; /* Espaço entre os itens */
+        align-items: center; /* Alinha os itens no topo */
+        margin: 20px; /* Margem para o contêiner */
+    }
+
+    .active{
+        font-weight:900;
+        text-decoration:underline;
+    }
+
+    .navMenu {
+        width: 1025px;
+        margin: 15px auto; /* Centraliza horizontalmente */
+        box-sizing: border-box;
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .navMenu a {
+        color: #000000; /* Cor do texto */
+        padding: 10px 15px; /* Espaçamento em volta do link */
+        display: inline-block; /* Permite o padding */
+        font-size: 25px; /* Aumenta o tamanho da fonte */
+    }
+
+    body {
+        background-attachment: fixed;
+        background-image: url('imagens/fundo-do-site.jpg'); /* Substitua pelo caminho da sua imagem */
+        background-size: cover; /* Faz a imagem cobrir todo o fundo */
+        background-repeat: no-repeat; /* Impede que a imagem se repita */
+        background-position: center; /* Centraliza a imagem no fundo */
+    }
+    .banner {
+        background-image: url('imagens/header-site.jpg'); /* Substitua pelo caminho da sua imagem */
+        background-repeat: no-repeat; /* Impede que a imagem se repita */
+        background-position: center; /* Centraliza a imagem no fundo */
+        width: 100%; /* Largura total do contêiner */
+        border: 6px;
+        box-sizing: border-box;
+        height: 300px; /* Altura fixa do contêiner */
+        display: flex; /* Usando flexbox para centralizar o texto */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        color: white; /* Cor do texto */
+        font-size: 25px;
+        text-align: center; /* Centraliza o texto */  
+    }
+
+    footer {
+        position:justify;
+        color: white;
+        margin:0 auto;
+        text-align: justify;
+        z-index: 20; /* Ajuste conforme necessário */
+    }
+
+    .noticia{
+        background-color: rgb(92, 35, 35); /* Cor de fundo */
+        border: 1px solid #000000; /* Borda */
+        border-radius: 8px; /* Bordas arredondadas */
+        padding: 30px; /* Espaçamento interno */
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: white;
+        word-spacing: 1px;
+        flex:1;
+        box-sizing: border-box;
+        padding: 10px;
+        margin:10px;
+    }
+
+
+    .demais-noticias {
+        display: flex; /* Usando flexbox para layout */
+        justify-content: space-between; /* Espaço entre os itens */
+    }
+
+    .demaisNoticias {
+        color: white;
+        text-align: center;
+
+    }
+
+    .textoLN{
+        background-attachment: fixed;
+        font-family: 'arial', sans-serif;
+        font-size: 20px;
+        width: 90%; /* Largura da caixa */
+        height: auto;
+        border-radius: 8px; /* Bordas arredondadas */
+        padding: 30px; /* Espaçamento interno */
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: black;
+        word-spacing: 1px;
+        text-align: justifcene;
+        margin:0 auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .linha {
+        background-color: rgb(92, 35, 35); /* Cor de fundo */
+        color:white;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    
+    form{
+        padding: 10px;
+        color:red;
+        width: 90%;
+        height: 40%;
+        text-align: center;
+        margin: auto;
+    }
+    
+
+
+    /* smartphones*/
+
+    @media (min-width:320px) and (max-width:600px) {
+
+        .noticiaDestaque {
+            display:block; 
+            text-align: center;
+        }
+
+        .imgNoticia {
+            width: 100%; /* Imagem principal ocupa toda a linha */
+        }
+        
+        .textoNoticia {
+            height: 500px;
+            width: 100%; /* Texto da notícia principal ocupa toda a largura */
+        }
+        
+        .demais-noticias {
+            flex-direction: column; /* Muda o layout para uma coluna */
+        }
+        
+        .noticia {
+            width: 100%; /* Cada notícia ocupa toda a largura */
+            margin-bottom: 20px;
+        
+
+        }
+        .navMenu {
+            width: 100%; /* Menu ocupa toda a largura da tela */
+            padding: 10px; /* Ajusta o espaçamento */
+            box-sizing: border-box;
+            text-align: center; /* Centraliza os links horizontalmente */
+        }
+    
+        .navMenu a {
+            display: inline-block; /* Mantém os links na horizontal */
+            padding: 10px 5px; /* Ajusta o espaçamento dos links */
+            font-size: 16px; /* Ajusta o tamanho da fonte */
+            text-align: center; /* Centraliza o texto dos links */
+        }
+    }
+    
+
+    /* Tema Claro */
+body.light-theme {
+    background-image: url('imagens/portalclaro.jpg');
+    background-size: cover;
+    color: black;
+  }
+  
+  /* Tema Escuro */
+  body.dark-theme {
+    background-image: url('imagens/portalescuro.jpg');
+    background-size: cover;
+    color: white;
+  }
+  
+  /* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    transition: background 0.5s ease;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Tema Claro */
+body.light-theme {
+    background-image: url('imagens/portalclaro.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+    background-image: url('imagens/portalescuro.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo do botão */
+button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
