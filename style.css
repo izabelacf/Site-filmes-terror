@@ -117,6 +117,10 @@
 
     }
 
+    .fotoNoticia{
+        width: 100%;
+    }
+
     .textoLN{
         background-attachment: fixed;
         font-family: 'arial', sans-serif;
@@ -158,7 +162,7 @@
 
     /* smartphones*/
 
-    @media (min-width:300px) and (max-width:600px) {
+    @media (min-width:300px) and (max-width:720px) {
 
         .noticiaDestaque {
             display:block; 
@@ -198,6 +202,122 @@
             text-align: center; /* Centraliza o texto dos links */
         }
     }
+
+    @media (min-width:721px) and (max-width:960px){
+        
+        .noticiaDestaque{
+            flex-direction: row;
+            display: flex;
+            flex-wrap: nowrap; /* Permite que os itens quebrem linha se não houver espaço */
+            justify-content: center; /* Espaço entre os itens */
+            align-items: center;
+        }
+             
+        .imgNoticia {
+            border-radius: 20px;
+            width: 35%;
+            border-radius: 8px; /* Bordas arredondadas na imagem */
+            margin-right: 20px; /* Adiciona margem à direita da imagem */
+                    
+        }
+
+        .imgNoticia img{
+            width: 100%;
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        .textoNoticia {
+            width: 65%;
+            font-size:medium;
+            overflow: hidden;
+        }
+        
+        .fotoNoticia{
+            width: 100%;
+        }
+        
+        .navMenu {
+            width: 100%; /* Menu ocupa toda a largura da tela */
+            padding: 10px; /* Ajusta o espaçamento */
+            text-align: center; /* Centraliza os links */
+        }
+        
+        .navMenu a {
+            font-size: 20px; /* Ajusta o tamanho da fonte */
+            padding: 10px; /* Ajusta o espaçamento dos links */
+        }
+        
+        .footer {
+            text-align: center; /* Centraliza o texto do footer */
+            padding: 10px; /* Adiciona algum espaçamento */ 
+        }           
+        
+        .noticia {
+            margin: 10px; /* Ajusta as margens */
+            width: 90%; /* Faz cada notícia ocupar 90% da largura */
+        }
+    }
+    
+    @media  (min-width:961px) and (max-width:1250px){
+
+        .noticiaDestaque{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .imgNoticia {
+            border-radius: 8px; /* Bordas arredondadas na imagem */
+            width: 40%; /* Largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            background-size: cover;
+
+        }
+
+        .imgNoticia img {
+            width: 100%;
+        }
+
+        .textoNoticia {
+            width: 65%;
+            font-size:medium;
+            overflow: hidden;
+        }
+
+        .navMenu {
+            width: 100%; /* Menu ocupa toda a largura da tela */
+            padding: 10px; /* Ajusta o espaçamento */
+            text-align: center; /* Centraliza os links */
+        }
+        
+        .navMenu a {
+            font-size: 20px; /* Ajusta o tamanho da fonte */
+            padding: 10px; /* Ajusta o espaçamento dos links */
+        }          
+        
+        .noticia {
+            margin: 10px; /* Ajusta as margens */
+            width: 90%; /* Faz cada notícia ocupar 90% da largura */
+        }
+
+        .demais-noticias {
+            display: flex; /* Usando flexbox para layout */
+            justify-content: space-between; /* Espaço entre os itens */
+        }
+    
+        .demaisNoticias {
+            color: white;
+            text-align: center;
+    
+        }
+    
+        .fotoNoticia{
+            width: 100%;
+        }
+    }
+
+
+    
     
 
     /* Tema Claro */
@@ -249,3 +369,4 @@ button {
 }
 
 
+        
