@@ -174,8 +174,10 @@
         }
         
         .textoNoticia {
-            height: 500px;
+            height: auto;
             width: 100%; /* Texto da notícia principal ocupa toda a largura */
+            font-size:large;
+            overflow: hidden;
         }
         
         .demais-noticias {
