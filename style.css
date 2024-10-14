@@ -167,10 +167,13 @@
         .noticiaDestaque {
             display:block; 
             text-align: center;
+            width: 100%;
         }
 
         .imgNoticia {
             width: 100%; /* Imagem principal ocupa toda a linha */
+            height: auto;
+            max-width: 100%;
         }
         
         .textoNoticia {
@@ -188,6 +191,21 @@
             width: 100%; /* Cada notícia ocupa toda a largura */
             margin-bottom: 20px;
         
+        .banner {
+            background-image: url('imagens/header-site.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-repeat: no-repeat; /* Impede que a imagem se repita */
+            background-position: center; /* Centraliza a imagem no fundo */
+            width: 100%; /* Largura total do contêiner */
+            border: 6px;
+            box-sizing: border-box;
+            height: 300px; /* Altura fixa do contêiner */
+            display: flex; /* Usando flexbox para centralizar o texto */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            color: white; /* Cor do texto */
+            font-size: 25px;
+            text-align: center; /* Centraliza o texto */  
+        }
 
         }
         .navMenu {
