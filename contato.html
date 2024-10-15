@@ -26,22 +26,16 @@
                 </h2>
                 <img src="imagens/escrita-aranha.jpg">
             </div>
-            <form   name="contato"
-                    method="post"
-                    action="agradecimento.html"
-                    autocomplete="on"
-                    target="_self"
-                    enctype="application/x-www-form-urlencoded">
-                Nome:<input type="text" name="Nome" size="20">
-                Número:<input type="tel" pattern="\d{2} \d{9}$" name="Número" size="20">
-                E-mail:<input type="email" name="E-mail" size="20">
-                Sexo:
-                Masculino<input type="radio" name="Sexo" value="M">
-                Feminino<input type="radio" name="Sexo" value="F">
-                <input type="submit" name="Enviar" value="Enviar">
-                <input type="reset" name="Limpar" value="Limpar">
-    
-            </form>
+         <form name="contato" method="post" action="agradecimento.html" autocomplete="on" target="_self" enctype="application/x-www-form-urlencoded">
+              Nome:<input type="text" name="Nome" size="20" required>
+              Número:<input type="tel" pattern="\d{2} \d{4,5}-\d{4}" name="Número" size="20" required placeholder="XX XXXXX-XXXX">
+              E-mail:<input type="email" name="E-mail" size="20" required>
+              Sexo:
+              Masculino<input type="radio" name="Sexo" value="M" required>
+              Feminino<input type="radio" name="Sexo" value="F" required>
+             <input type="submit" name="Enviar" value="Enviar">
+             <input type="reset" name="Limpar" value="Limpar">
+        </form>
         </section>
         <footer>
             Izabela Cristina, 2024.
