@@ -14,7 +14,7 @@
         
     .textoNoticia {
         font-family: 'arial', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         width: 60%; /* Largura da caixa */
         height: 350px;
         background-color: tomato; /* Cor de fundo */
@@ -143,19 +143,19 @@
     .linha {
         background-color: rgb(92, 35, 35); /* Cor de fundo */
         color:white;
-        width: 70%;
+        width: 60%;
         text-align: center;
         margin: auto;
     }
 
     
     form{
-        padding: 10px;
-        color:red;
-        width: 90%;
-        height: 40%;
-        text-align: center;
-        margin: auto;
+        padding: 20px;
+        color:tomato;
+        gap: 10px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
     }
     
 
