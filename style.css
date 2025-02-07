@@ -17,7 +17,7 @@
         font-size: 18px;
         width: 60%; /* Largura da caixa */
         height: 350px;
-        background-color: tomato; /* Cor de fundo */
+        background-color: rgb(92, 35, 35); /* Cor de fundo */
         border: 1px solid #000000; /* Borda */
         border-radius: 8px; /* Bordas arredondadas */
         padding: 30px; /* Espaçamento interno */
@@ -72,12 +72,14 @@
         background-position: center; /* Centraliza a imagem no fundo */
         width: 100%; /* Largura total do contêiner */
         border: 6px;
+        color: rgb(92, 35, 35);
+        word-spacing: 20px;
+        font-family: 'Courier New', Courier, monospace;
         box-sizing: border-box;
-        height: 300px; /* Altura fixa do contêiner */
+        height: 320px; /* Altura fixa do contêiner */
         display: flex; /* Usando flexbox para centralizar o texto */
         justify-content: center; /* Centraliza horizontalmente */
         align-items: center; /* Centraliza verticalmente */
-        color: white; /* Cor do texto */
         font-size: 25px;
         text-align: center; /* Centraliza o texto */  
     }
@@ -91,7 +93,7 @@
     }
 
     .noticia{
-        background-color: rgb(92, 35, 35); /* Cor de fundo */
+        background-color: rgb(92, 35, 35);/* Cor de fundo */
         border: 1px solid #000000; /* Borda */
         border-radius: 8px; /* Bordas arredondadas */
         padding: 30px; /* Espaçamento interno */
@@ -131,13 +133,13 @@
         padding: 30px; /* Espaçamento interno */
         letter-spacing: 1px;
         word-spacing: 2px;
-        color: black;
+        color: white;
         word-spacing: 1px;
         text-align: justifcene;
         margin:0 auto;
         box-sizing: border-box;
         padding: 10px;
-        background-color: white;
+        background-color: black;
     }
 
     .linha {
@@ -339,54 +341,3 @@
 
     
     
-
-    /* Tema Claro */
-body.light-theme {
-    background-image: url('imagens/portalclaro.jpg');
-    background-size: cover;
-    color: black;
-  }
-  
-  /* Tema Escuro */
-  body.dark-theme {
-    background-image: url('imagens/portalescuro.jpg');
-    background-size: cover;
-    color: white;
-  }
-  
-  /* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    transition: background 0.5s ease;
-    padding: 20px;
-    min-height: 100vh;
-}
-
-/* Tema Claro */
-body.light-theme {
-    background-image: url('imagens/portalclaro.jpg');
-    background-size: cover;
-    background-position: center;
-    color: black;
-}
-
-/* Tema Escuro */
-body.dark-theme {
-    background-image: url('imagens/portalescuro.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Estilo do botão */
-button {
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-
-        
