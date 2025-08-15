@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title> Portal de filmes de terror | Contato </title>
-        <meta charset="utf-8">
-        <meta name = "viewport" content = "width=device-width, inicial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-    </head>
-    <body>  
-        <section class="banner">
-            <h2 class="tituloPortal"> PORTAL DE FILMES DE TERROR</h2>
-        </section>
-            <div class="navMenu">
-                <a href= "index.html">Home</a>
-                <a href= "reviews.html">Reviews</a>
-                <a href= "Noticias.html"> Noticias </a>
-                <a href= "https://www.uol.com.br/nossa/noticias/redacao/2023/10/31/olha-o-susto-10-dos-lugares-mais-assustadores-de-todo-o-mundo.htm"> Estranho e Incomum</a>
-                <a href= "Comunidade.html">Comunidade </a>
-                <a href= "contato.html" class="active"> Contato</a>
-                <a href= "https://x.com/THorrorHub">Sobre Nós</a>
-            </div>
-        <section>
-            <div class="linha">
-                <h2> Para se manter informado sobre as últimas notícias do Portal de Filmes de Terror, preencha
-                    os dados abaixo que lhe mandaremos as novidades!
-                </h2>
-                <img src="imagens/escrita-aranha.jpg">
-            </div>
-            <div class="linha">
-                <form   name="contato"
-                        method="get"
-                        action="agradecimento.html"
-                        autocomplete="on"
-                        target="_self"
-                        enctype="application/x-www-form-urlencoded">
-                        
-                    Nome:<input type="text" name="Nome" size="20">
-                    Preferências:<textarea name="Preferencias" rows="3" cols="22"></textarea>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThorrorHub | Contato</title>
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" media="screen">
+  <script src="js.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html">
+        <img src="imagens/THHlogopng.png" alt="Logo do THH" class="logo">
+    </a>
 
-                    Número:<input type="tel" pattern="\d{2} \d{9}$" name="Número" size="20">
-                    E-mail:<input type="email" name="E-mail" size="20">
-                    Sexo:
-                    Masculino<input type="radio" name="Sexo" value="M">
-                    Feminino<input type="radio" name="Sexo" value="F">
-                    <input type="submit" name="Enviar" value="Enviar">
-                    <input type="reset" name="Limpar" value="Limpar">
-        
-                </form>
-            </div>
-        </section>
-        <footer>
-            Izabela Cristina
-        </footer>
-    </body>
+    <!-- Botão sanduíche (mobile) -->
+    <button id="btn-menu"
+            class="menu-toggle"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menu">☰</button>
+
+    <!-- Menu principal -->
+    <nav id="menu-principal" class="navMenu" aria-label="Principal">
+      <a href="index.html" class="active" aria-current="page">HOME</a>
+      <a href="reviews.html">REVIEWS</a>
+      <a href="Noticias.html">NOTÍCIAS</a>
+      <a href="Comunidade.html">COMUNIDADE</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="https://x.com/THorrorHub" target="_blank" rel="noopener noreferrer">SOBRE NÓS</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="linha" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Fale com a gente</h2><br>
+      <p>Tem uma sugestão, pauta ou quer enviar sua review? Preencha os campos abaixo!</p>
+
+      <form action="agradecimento.html" method="get" novalidate>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="assunto">Assunto</label>
+        <input id="assunto" name="assunto" type="text" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2025 - Desenvolvido por Izabela Cristina</footer>
+</body>
 </html>

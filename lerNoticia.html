@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-        <title> The Horror HUub | Home </title>
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+        <title> The Horror Hub | Noticia </title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     </head>
     <body>
-        <section class="banner">
-        </section>
-        <div class="navMenu">
-            <a href= "index.html">Home</a>
-            <a href= "reviews.html">Reviews</a>
-            <a href= "Noticias.html" class="active"> Noticias </a>
-            <a href= "https://www.uol.com.br/nossa/noticias/redacao/2023/10/31/olha-o-susto-10-dos-lugares-mais-assustadores-de-todo-o-mundo.htm"> Estranho e Incomum</a>
-            <a href= "Comunidade.html">Comunidade </a>
-            <a href= "contato.html"> Contato</a>
-            <a href= "https://x.com/THorrorHub">Sobre Nós</a>
-        </div>
+        <header class="topbar">
+            <a href="index.html">
+                <img src="imagens/THHlogopng.png" alt="Logo do THH" class="logo">
+            </a>
 
+            <!-- Botão sanduíche (mobile) -->
+            <button id="btn-menu"
+                    class="menu-toggle"
+                    aria-controls="menu-principal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">☰</button>
+
+            <!-- Menu principal -->
+            <nav id="menu-principal" class="navMenu" aria-label="Principal">
+                <a href="index.html">HOME</a>
+                <a href="reviews.html">REVIEWS</a>
+                <a href="Noticias.html" class="active" aria-current="page">NOTÍCIAS</a>
+                <a href="Comunidade.html">COMUNIDADE</a>
+                <a href="contato.html">CONTATO</a>
+                <a href="https://x.com/THorrorHub" target="_blank" rel="noopener noreferrer">SOBRE NÓS</a>
+            </nav>
+        </header>
         <section class="lerNoticia">
-            <div style="text-align: center;">
-                <img src="imagens/a-casa-de-cera-2.jpg" width="1000px" alt="Foto dos personagens">
-            </div>
             <div class="textoLN">
+                <img src="imagens/a-casa-de-cera-2-gimp.jpg" alt="Foto dos personagens">
                 <h2>A CASA DE CERA: O CLÁSSICO DO TERROR. </h2>
-                <h3> <strong>
+                <h3>
                     Confira abaixo algumas curiosidades reunidas para relembrarmos a obra prima do filme
                     que assombra as telas desde os anos 2000.
-                </strong></h3>
-                <strong>1.REMAKE </strong>
-                <p>
-                    <img src="imagens/museu-de-cera-1953.jpg" width="600px"></p>
-                </p>
+                </h3>
+                <div class="titulo-ln"> 
+                    1.REMAKE
+                </div>
+                <img src="imagens/museu-de-cera-1953-gimp.jpg" alt="Foto do filme antigo da Casa de Cera">
                  <p>O filme é um remake de "Museu de Cera" (1953), que por sua vez é um remake de "Os Crimes do Museu" (1933). 
                     Porém vários elementos do roteiro e da trama são totalmente diferentes.
-                </p>
-               <strong> 2. CERA </strong>
-                <p>
-                    <img src="imagens/cera-ln.jpg" width="600px"></p>
+                 </p>
+                <div class="titulo-ln">
+                    2. CERA
+                </div>
+                    <img src="imagens/cera-ln.jpg" alt="Carly e Vincent na cena de perseguição">
                 <p> A cera foi utilizada para criar figuras realistas que são centrais para a narrativa de terror. 
                     Artistas especializados esculpiram as figuras usando uma mistura de
                     cera e silicone para capturar detalhes minuciosos, como expressões faciais. As estátuas de cera 
@@ -45,20 +56,20 @@
                     usados para representar as figuras, intensificando a imersão. Essa técnica contribuiu para a 
                     atmosfera sombria do filme, fazendo do museu de cera um cenário assustador e impactante.
                 </p>
-                <strong>3. PARTE DO ELENCO JA HAVIA TRABALHADO JUNTO ANTES</strong>
-                <p>
-                    <img src="imagens/elenco.jpg" width="600px"></p>
-                </p>
+                <div class="titulo-ln">
+                    3. PARTE DO ELENCO JA HAVIA TRABALHADO JUNTO ANTES
+                </div>
+                    <img src="imagens/elenco.jpg" alt="Elenco do filme">
                 <p>
                     Essa não foi a primeira vez que alguns membros do elenco trabalharam juntos. Na verdade, Padalecki
                     e Chad Michael Murray, que interpretou Nick, estrelaram a série ‘Gilmore Girls’ nos anos 2000. Além 
                     disso, Padalecki e Hilton voltariam a colaborar em um episódio de ‘Supernatural’ no mesmo ano de estreia 
                     do filme – que inclusive faz menção ao terror.
                 </p>
-                <strong>4. PROCESSO MILIONÁRIO</strong>
-                <p>
-                    <img src="imagens/processo-milionario.jpg" width="600px"></p>
-                </p>
+                <div class="titulo-ln"> 
+                    4. PROCESSO MILIONÁRIO
+                </div>
+                    <img src="imagens/processo-milionario.jpg" alt="Museu pegando fogo na cena final">
                 <p>
                     Durante as filmagens, um incidente grave ocorreu nos estúdios Warner Bros.
                     na Austrália, onde o filme estava sendo rodado. Um incêndio destruiu uma das atrações da companhia, levando
@@ -66,10 +77,10 @@
                     A causa do incêndio foi atribuída a uma vela acesa que havia sido deixada em um ambiente perigoso, 
                     resultando em danos significativos.
                 </p>
-                <strong>5.O QUE TERÁ ACONTECIDO A BABY JANE?</strong>
-                <p>
-                    <img src="imagens/baby-jane.jpg" width="600px">
-                </p>
+                <div class="titulo-ln">
+                    5. O QUE TERÁ ACONTECIDO A BABY JANE?
+                </div>
+                    <img src="imagens/baby-jane.jpg" alt="Imagem do cinenma com o que terá acontecido a Baby Jane">
                 <p>
                     Nas primeiras cenas, a personagem Carly sai para explorar a estranha cidade de Ambrose e acaba entrando no cinema
                     local, onde é exibido o clássico "O Que Teria Acontecido a Baby Jane?" (1962). Essa escolha de filme não é aleatória;
@@ -81,7 +92,7 @@
             </div>
         </section>
         <footer>
-            Izabela Cristina
+            The Horror Hub &copy;
         </footer>
     </body>
 </html>

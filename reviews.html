@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     <title>The Horror Hub | Reviews </title>
 </head>
 <body>
-    <section class="banner">
+    <header class="topbar">
+    <a href="index.html">
+        <img src="imagens/THHlogopng.png" alt="Logo do THH" class="logo">
+    </a>
+
+    <!-- Botão sanduíche (mobile) -->
+    <button id="btn-menu"
+            class="menu-toggle"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menu">☰</button>
+
+    <!-- Menu principal -->
+    <nav id="menu-principal" class="navMenu" aria-label="Principal">
+      <a href="index.html">HOME</a>
+      <a href="reviews.html" class="active" aria-current="page">REVIEWS</a>
+      <a href="Noticias.html">NOTÍCIAS</a>
+      <a href="Comunidade.html">COMUNIDADE</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="https://x.com/THorrorHub" target="_blank" rel="noopener noreferrer">SOBRE NÓS</a>
+    </nav>
+  </header>
+
+<!-- Classificação de filmes -->
+    <section class="filmes-classificacao">
+      <h2>Classifique os filmes que já assistiu</h2>
+      <div class="filmes">
+        <div class="filme">
+          <img src="imagens/acasadeceraclass.jpg" alt="A Casa de Cera (2005)" loading="lazy">
+          <h3>A Casa de Cera (2005)</h3>
+          <div class="estrelas">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+          <p class="media">Média: <span class="valor-media">0.0</span></p>
+          <p><span class="total-votos">(0 votos)</span></p>
+        </div>
+
+        <div class="filme">
+          <img src="imagens/olhosfamintosclass.jpg" alt="Olhos Famintos (2001)" loading="lazy">
+          <h3>Olhos Famintos (2001)</h3>
+          <div class="estrelas">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+          <p class="media">Média: <span class="valor-media">0.0</span></p>
+          <p><span class="total-votos">(0 votos)</span></p>
+        </div>
+      </div>
     </section>
-    <div class="navMenu">
-        <a href= "index.html">Home</a>
-        <a href= "reviews.html" class="active">Reviews</a>
-        <a href= "Noticias.html"> Noticias </a>
-        <a href= "https://www.uol.com.br/nossa/noticias/redacao/2023/10/31/olha-o-susto-10-dos-lugares-mais-assustadores-de-todo-o-mundo.htm"> Estranho e Incomum</a>
-        <a href= "Comunidade.html">Comunidade </a>
-        <a href= "contato.html"> Contato</a>
-        <a href= "https://x.com/THorrorHub">Sobre Nós</a>
-    </div>
 </body>
 </html>

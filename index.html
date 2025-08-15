@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <meta name="viewport" content="width=device-width, initial-scale=1.1">
-    <head>
-        <title> The Horror Hub | Home </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-    </head>
-    <body>  
-    <body class="light-theme">
-        <section class="banner">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> The Horror Hub | Home </title>
 
-        </section>
-            <div class="navMenu">
-                <a href= "index.html" class="active">Home</a>
-                <a href= "reviews.html">Reviews</a>
-                <a href= "Noticias.html"> Noticias </a>
-                <a href= "https://www.uol.com.br/nossa/noticias/redacao/2023/10/31/olha-o-susto-10-dos-lugares-mais-assustadores-de-todo-o-mundo.htm"> Estranho e Incomum</a>
-                <a href= "Comunidade.html">Comunidade </a>
-                <a href= "contato.html"> Contato</a>
-                <a href= "https://x.com/THorrorHub">Sobre Nós</a>
-            </div>
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" media="screen">
+  <script src="js.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html">
+        <img src="imagens/THHlogopng.png" alt="Logo do THH" class="logo">
+    </a>
+
+    <!-- Botão sanduíche (mobile) -->
+    <button id="btn-menu"
+            class="menu-toggle"
+            aria-controls="menu-principal"
+            aria-expanded="false"
+            aria-label="Abrir menu">☰</button>
+
+    <!-- Menu principal -->
+    <nav id="menu-principal" class="navMenu" aria-label="Principal">
+      <a href="index.html" class="active" aria-current="page">HOME</a>
+      <a href="reviews.html">REVIEWS</a>
+      <a href="Noticias.html">NOTÍCIAS</a>
+      <a href="Comunidade.html">COMUNIDADE</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="https://x.com/THorrorHub" target="_blank" rel="noopener noreferrer">SOBRE NÓS</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- Destaque: imagem + texto lado a lado -->
+    <section class="noticiaDestaque">
+      <div class="imgNoticia">
+        <img src="imagens/a-casa-de-cera-2-gimp.jpg" alt="Wade e Dalton na cena do museu">
+      </div>
+
+      <div class="textoNoticia">
+        <!-- Home: use H1 para o título principal -->
+        <h1>A CASA DE CERA: O CLÁSSICO DO TERROR.</h1>
+
+        <p>O filme de terror slasher “A Casa de Cera” completou oficialmente os seus 20 anos de história.
+           Lançado em 2005, ele se tornou um marco dos filmes de terror dos anos 2000.</p>
+
+        <p>Veja aqui algumas curiosidades sobre o filme:</p>
+          
+        <p>1. Remake de um Clássico: “A Casa de Cera” (2005) é um remake do filme homônimo de 1953.</p>
+
+        <p>2. A casa foi construída...</p>
         
-        <section class="noticiaDestaque">
-            <div class="imgNoticia">
-                <img src="imagens/a-casa-de-cera-2.jpg" alt="Foto dos personagens">
-            </div>
-            <div class="textoNoticia">
-                <h1>A CASA DE CERA: O CLÁSSICO DO TERROR. </h1>
-                <p> O filme de terror slasher 'A Casa de Cera' está quase completando os seus 20 anos de história.
-                    Lançado em 2005, ele se tornou um marco dos filmes de terror dos anos 2000 
-                </p>
-                <p>
-                    Veja aqui 5 curiosidades sobre o filme:
-                </p>
-                <ul>
-                    <li>1. Remake de um Clássico: "A Casa de Cera" (2005) é um remake do filme homônimo de 1953.</li>
-                    <li>2. A casa foi construída...</li>
-                </ul>
-                <p>
-                    <a href="lerNoticia.html"> Para saber mais, acesse </a>
-                </p>
-            </div>
-        </section>
-        <section class="demaisNoticias">
-            <h2><strong>CONFIRA DEMAIS NOTICIAS DO PORTAL DE FILMES DE TERROR:</h2></strong>
-            <div class="demais-noticias">
-                <div class="noticia">
-                    <h3>Atriz de ‘Pânico na Floresta 5’ estrelará terror INTERATIVO estilo ‘Black Mirror: Bandersnatch’</h3>
-                    <img src="imagens/atriz-panico.avif" class="fotoNoticia">
-                    <p>
-                        De acordo com o Deadline, Roxanne McKee (‘Pânico na Floresta’) será a protagonista de ‘The Run‘,
-                        terror interativo estilo ‘Black Mirror: Bandersnatch‘.
-                    </p>
-                    <a href="https://cinepop.com.br/atriz-de-panico-na-floresta-5-estrelara-terror-interativo-estilo-black-mirror-bandersnatch-494562/"
-                    style="color:white"> Para saber mais, acesse </a>
-                </div>
-                <div class="noticia">
-                    <h3> Confira uma crítica sobre a classica franquia desde os anos 2000.</h3>
-                    <img src="imagens/panico-2021.jpg" class="fotoNoticia">
-                    <p>
-                        Refazer? Começar de onde? Como reciclar? São muitos os questionamentos, mas uma coisa é certa: 
-                        se o tema é a franquia Pânico na Floresta, convenhamos, chama a atencão de qualquer fã do genero
-                        terror.
-                    </p> 
-                   <a href="https://www.planocritico.com/critica-panico-na-floresta-a-fundacao/" style="color:white"> Para saber mais, acesse </a>
-                </div>
-                <div class="noticia">
-                    <h3> Curiosidade | Confira como é a mãe do filme de terror de sucesso de 2022, Barbarian, na vida real</h3>
-                    <img src="imagens/barbarian.jpg" class="fotoNoticia">
-                    <p>
-                        Para interpretar a Mãe, Davis diz que foi encorajado por seu diretor a procurar casos reais de
-                        crianças “selvagens” que foram criadas sem muita supervisão.
-                    </p>
-                    <a href="https://telugustates.net/entretenimento/como-e-a-mae-do-filme-de-terror-de-sucesso-de-2022-barbarian-na-vida-real/45288/"
-                    style="color:white"> Para saber mais, acesse </a>
-                </div>
-            </div>
-        </section>
-    <footer> Izabela Cristina </footer>
-        <script src="js.js"></script>
-    </body>
+
+        <p><a href="lerNoticia.html">Para saber mais, acesse</a></p>
+      </div>
+    </section>
+    <section class="ultimas-noticias">
+        <h2>ÚLTIMAS NOTÍCIAS</h2>
+        <div class="noticias-grid">
+          <article class="noticia">
+              <img src="imagens/ahoradomal.jpg" alt="Pôster do filme A Hora do Mal">
+              <div class="conteudo-noticia">
+                  <h3>“A Hora do Mal” tem um dos finais mais perturbadores do ano</h3>
+                  <p>No suspense de Zach Cregger, o desaparecimento de 17 crianças choca uma cidade e revela segredos aterrorizantes.</p>
+                  <a href="cardnoticia.html">Ler mais</a>
+              </div>
+          </article>
+          <article class="noticia">
+              <img src="imagens/juntos.jpg" alt="Imagem do filme Juntos">
+              <div class="conteudo-noticia">
+                  <h3>“Juntos” é acusado de plágio por longa indie</h3>
+                  <p>O terror aclamado Juntos (2025), estrelado por Dave Franco e Alison Brie, está sendo processado por suposta cópia da ideia central de Better Half (2023), que também apresenta um casal acordando grudado..</p>
+                  <a href="cardnoticia.html">Ler mais</a>
+              </div>
+          </article>
+          <article class="noticia">
+              <img src="imagens/ahoradomal.jpg" alt="Pôster do filme A Hora do Mal">
+              <div class="conteudo-noticia">
+                  <h3>A Hora do Mal tem um dos finais mais perturbadores do ano</h3>
+                  <p>No suspense de Zach Cregger, o desaparecimento de 17 crianças choca uma cidade e revela segredos aterrorizantes.</p>
+                  <a href="cardnoticia.html">Ler mais</a>
+              </div>
+          </article>
+        </div>
+    </section>
+
+    
+  </main>
+
+  <footer> © 2025 - Desenvolvido por Izabela Cristina </footer>
+</body>
 </html>
